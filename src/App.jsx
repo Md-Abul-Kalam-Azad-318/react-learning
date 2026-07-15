@@ -7,11 +7,10 @@ import Contact from './pages/Contact'
 import Counter from './components/Counter'
 import Footer from './components/Footer'
 import Button from './components/Button'
-
+import Greeting from './components/Greeting'
 
 function App() {
   
-
   return (
     <div>
       <Navbar />
@@ -20,7 +19,10 @@ function App() {
       <Contact /> 
       <Counter /> 
       <Footer /> 
-      <Button />  
+      <Button />
+      <Greeting name = 'Azad' />
+      <Greeting name = 'Rahim' />
+      <Greeting name = 'Karim' />  
     </div>
   )
 }
