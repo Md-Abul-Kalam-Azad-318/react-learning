@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Counter from './components/Counter'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Home /> 
       <About />
       <Contact /> 
-      <Counter />    
+      <Counter /> 
+      <Footer />   
     </div>
   )
 }
