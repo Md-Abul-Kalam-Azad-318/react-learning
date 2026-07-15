@@ -6,6 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Counter from './components/Counter'
 import Footer from './components/Footer'
+import Button from './components/Button'
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       <About />
       <Contact /> 
       <Counter /> 
-      <Footer />   
+      <Footer /> 
+      <Button />  
     </div>
   )
 }
