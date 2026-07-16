@@ -14,15 +14,27 @@ function App() {
   return (
     <div>
       <Navbar />
+
       <Home /> 
       <About />
       <Contact /> 
+
       <Counter /> 
-      <Footer /> 
+
       <Button />
-      <Greeting name = 'Azad' />
-      <Greeting name = 'Rahim' />
-      <Greeting name = 'Karim' />  
+      
+      <Greeting
+        name = 'Azad'
+        profession = 'Managing Director'
+        country = 'Bangladesh'
+        />
+        <Greeting
+        name = 'Rahim'
+        profession = 'Engineer'
+        country = 'Bangladesh'
+        />
+        
+        <Footer />   
     </div>
   )
 }

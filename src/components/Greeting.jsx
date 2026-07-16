@@ -1,10 +1,14 @@
 import React from 'react'
 
-function Greeting(props) {
-    console.log(props);
+function Greeting({name, profession, country}) {
+  
   return (
     <div>
-        <h2>Hello, {props.name}</h2>
+        
+        <h2>{name}</h2>
+        <p>Profession: {profession}</p>
+        <p>Country: {country}</p>
+        <hr />
     </div>
   )
 }
