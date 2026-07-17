@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Button from './components/Button'
 import Greeting from './components/Greeting'
 import StudentList from './components/StudentList'
+import EmployeeList from './components/EmployeeList'
 
 function App() {
   
@@ -36,6 +37,7 @@ function App() {
         />
 
         <StudentList />
+        <EmployeeList />
         
         <Footer />   
     </div>
