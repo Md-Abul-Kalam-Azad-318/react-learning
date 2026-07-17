@@ -10,6 +10,7 @@ import Button from './components/Button'
 import Greeting from './components/Greeting'
 import StudentList from './components/StudentList'
 import EmployeeList from './components/EmployeeList'
+import MachineList from './components/MachineList'
 
 function App() {
   
@@ -38,6 +39,7 @@ function App() {
 
         <StudentList />
         <EmployeeList />
+        <MachineList />
         
         <Footer />   
     </div>
