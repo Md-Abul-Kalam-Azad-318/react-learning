@@ -8,6 +8,7 @@ import Counter from './components/Counter'
 import Footer from './components/Footer'
 import Button from './components/Button'
 import Greeting from './components/Greeting'
+import StudentList from './components/StudentList'
 
 function App() {
   
@@ -33,10 +34,12 @@ function App() {
         profession = 'Engineer'
         country = 'Bangladesh'
         />
+
+        <StudentList />
         
         <Footer />   
     </div>
-  )
+  );
 }
 
 export default App
