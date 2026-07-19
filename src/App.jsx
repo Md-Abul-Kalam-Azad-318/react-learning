@@ -11,6 +11,11 @@ import Greeting from './components/Greeting'
 import StudentList from './components/StudentList'
 import EmployeeList from './components/EmployeeList'
 import MachineList from './components/MachineList'
+import Login from './components/Login'
+import StudentResult from './components/StudentResult'
+import Age from './components/Age'
+import Temperature from './components/Temperature'
+import EmployeeStatus from './components/EmployeeStatus'
 
 function App() {
   
@@ -40,6 +45,12 @@ function App() {
         <StudentList />
         <EmployeeList />
         <MachineList />
+        
+        <Login />
+        <StudentResult/>
+        <Age />
+        <Temperature />
+        <EmployeeStatus />
         
         <Footer />   
     </div>

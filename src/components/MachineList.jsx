@@ -8,9 +8,13 @@ const MachineList = () => {
         'Press Section',
         'Dryer Section',
         'Reel',
-        'Rewinder Section'
+        'Rewinder Section',
+        'Generator #1',
+        'Generator #2',
+        'Compressor #1',
+        'Comprssor #2',
+        'Compressor #3'
     ];
-
 
   return (
     <div>
