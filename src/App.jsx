@@ -16,6 +16,10 @@ import StudentResult from './components/StudentResult'
 import Age from './components/Age'
 import Temperature from './components/Temperature'
 import EmployeeStatus from './components/EmployeeStatus'
+import UserInput from './components/UseInput'
+import ProfessionInput from './components/ProfessionInput'
+import MachineInput from './components/MachineInput'
+import CountryInput from './components/CountryInput'
 
 function App() {
   
@@ -51,6 +55,11 @@ function App() {
         <Age />
         <Temperature />
         <EmployeeStatus />
+
+        <UserInput />
+        <ProfessionInput />
+        <MachineInput />
+        <CountryInput />
         
         <Footer />   
     </div>
