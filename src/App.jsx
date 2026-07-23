@@ -20,6 +20,11 @@ import UserInput from './components/UseInput'
 import ProfessionInput from './components/ProfessionInput'
 import MachineInput from './components/MachineInput'
 import CountryInput from './components/CountryInput'
+import Welcome from './components/Welcome'
+import Title from './components/Title'
+import Message from './components/Message'
+import TitleChange from './components/TitleChange'
+import CounterEffect from './components/CounterEffect'
 
 function App() {
   
@@ -30,8 +35,6 @@ function App() {
       <Home /> 
       <About />
       <Contact /> 
-
-      <Counter /> 
 
       <Button />
       
@@ -60,6 +63,14 @@ function App() {
         <ProfessionInput />
         <MachineInput />
         <CountryInput />
+
+        <Welcome />
+        <Title />
+        <Counter /> 
+        
+        <Message />
+        <TitleChange />
+        <CounterEffect />
         
         <Footer />   
     </div>
@@ -67,4 +78,5 @@ function App() {
 }
 
 export default App
+
 
