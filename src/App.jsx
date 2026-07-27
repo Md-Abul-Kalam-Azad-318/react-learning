@@ -25,6 +25,8 @@ import Title from './components/Title'
 import Message from './components/Message'
 import TitleChange from './components/TitleChange'
 import CounterEffect from './components/CounterEffect'
+import UserList from './components/UserList'
+import PostList from './components/PostList'
 
 function App() {
   
@@ -71,6 +73,10 @@ function App() {
         <Message />
         <TitleChange />
         <CounterEffect />
+
+        <UserList />
+        <PostList />
+        
         
         <Footer />   
     </div>
