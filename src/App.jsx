@@ -27,6 +27,8 @@ import TitleChange from './components/TitleChange'
 import CounterEffect from './components/CounterEffect'
 import UserList from './components/UserList'
 import PostList from './components/PostList'
+import UsersListError from './components/UsersListError'
+import PostListError from './components/PostListError'
 
 function App() {
   
@@ -76,6 +78,9 @@ function App() {
 
         <UserList />
         <PostList />
+
+        <UsersListError />
+        <PostListError />
         
         
         <Footer />   

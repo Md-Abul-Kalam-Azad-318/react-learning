@@ -23,7 +23,9 @@ const PostList = () => {
         <h2>Post List</h2>
 
         {
-            posts.map((post) =>(
+            posts
+            .slice(0, 10)
+            .map((post) =>(
                 <p key={post.id}>{post.title}</p>
             ))
         }
