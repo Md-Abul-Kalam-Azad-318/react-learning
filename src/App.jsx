@@ -1,93 +1,26 @@
 
-import './App.css'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Counter from './components/Counter'
-import Footer from './components/Footer'
-import Button from './components/Button'
-import Greeting from './components/Greeting'
-import StudentList from './components/StudentList'
-import EmployeeList from './components/EmployeeList'
-import MachineList from './components/MachineList'
-import Login from './components/Login'
-import StudentResult from './components/StudentResult'
-import Age from './components/Age'
-import Temperature from './components/Temperature'
-import EmployeeStatus from './components/EmployeeStatus'
-import UserInput from './components/UseInput'
-import ProfessionInput from './components/ProfessionInput'
-import MachineInput from './components/MachineInput'
-import CountryInput from './components/CountryInput'
-import Welcome from './components/Welcome'
-import Title from './components/Title'
-import Message from './components/Message'
-import TitleChange from './components/TitleChange'
-import CounterEffect from './components/CounterEffect'
-import UserList from './components/UserList'
-import PostList from './components/PostList'
-import UsersListError from './components/UsersListError'
-import PostListError from './components/PostListError'
+import {Routes, Route} from "react-router-dom";
 
-function App() {
-  
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+
+function App() { 
   return (
     <div>
       <Navbar />
-
-      <Home /> 
-      <About />
-      <Contact /> 
-
-      <Button />
-      
-      <Greeting
-        name = 'Azad'
-        profession = 'Managing Director'
-        country = 'Bangladesh'
-        />
-        <Greeting
-        name = 'Rahim'
-        profession = 'Engineer'
-        country = 'Bangladesh'
-        />
-
-        <StudentList />
-        <EmployeeList />
-        <MachineList />
-        
-        <Login />
-        <StudentResult/>
-        <Age />
-        <Temperature />
-        <EmployeeStatus />
-
-        <UserInput />
-        <ProfessionInput />
-        <MachineInput />
-        <CountryInput />
-
-        <Welcome />
-        <Title />
-        <Counter /> 
-        
-        <Message />
-        <TitleChange />
-        <CounterEffect />
-
-        <UserList />
-        <PostList />
-
-        <UsersListError />
-        <PostListError />
-        
-        
-        <Footer />   
+      <Routes>
+        <Route path = "/" element = {<Home />} />
+        <Route path = "/about" element = {<About />} />
+        <Route path = "/services" element = {<Services />} />
+        <Route path = "/contact" element = {<Contact/>} />
+      </Routes>       
     </div>
   );
 }
 
-export default App
+export default App;
 
 
