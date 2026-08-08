@@ -10,6 +10,11 @@ import Login from "./pages/Login";
 import User from "./pages/User";
 import NotFound from "./pages/NotFound";
 
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
+import Reports from './pages/Reports';
+
 const App = () => {
   return (
     <div>
@@ -24,6 +29,12 @@ const App = () => {
         <Route path = "/user/:id" element = {<User />}/>
 
         <Route path="*" element = {<NotFound />} />
+
+        <Route path = "/dashboard" element = {<Dashboard />}>
+            <Route path = "profile" element = {<Profile />} />
+            <Route path = "settings" element = {<Settings />}/>
+            <Route path = "reports" element = {<Reports />}/>
+        </Route>
     </Routes>  
     </div>
   );
