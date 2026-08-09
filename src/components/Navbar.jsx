@@ -48,7 +48,9 @@ function Navbar() {
         }
        >
         Login
-       </NavLink>
+       </NavLink> {" | "}
+
+       
 
     </nav>
   );

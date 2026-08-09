@@ -15,10 +15,12 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Reports from './pages/Reports';
 
+
 const App = () => {
   return (
     <div>
         <Navbar />
+        
         <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/about" element = {<About />} />
