@@ -33,6 +33,7 @@ const App = () => {
         <Route path="*" element = {<NotFound />} />
 
         <Route path = "/dashboard" element = {<Dashboard />}>
+            <Route index element = {<Profile />}/>
             <Route path = "profile" element = {<Profile />} />
             <Route path = "settings" element = {<Settings />}/>
             <Route path = "reports" element = {<Reports />}/>
