@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import User from "./pages/User";
+import Users from "./pages/Users"
 import NotFound from "./pages/NotFound";
 
 import Dashboard from './pages/Dashboard';
@@ -38,6 +39,7 @@ const App = () => {
             <Route path = "settings" element = {<Settings />}/>
             <Route path = "reports" element = {<Reports />}/>
             <Route path = "user/:id" element = {<User />}/>
+            <Route path = "users" element = {<Users />}/>
         </Route>
     </Routes>  
     </div>
