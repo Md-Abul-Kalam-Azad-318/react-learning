@@ -20,6 +20,15 @@ function Users() {
         <button onClick={() =>setSearchParams({name: "Bob", role: "User"})}>
           Set Bob as User
         </button>
+        
+        <button onClick={() =>{
+          setSearchParams({name: "Bob"});
+        }}
+        >
+          Clear Role
+        
+        </button>
+        
     </div>
   );
 }
