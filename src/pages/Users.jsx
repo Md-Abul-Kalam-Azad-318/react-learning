@@ -26,10 +26,20 @@ function Users() {
         }}
         >
           Clear Role
-        
         </button>
+
+        <button onClick={() =>{
+          setSearchParams((pararms) =>{
+            pararms.set("role", "Admin");
+            return pararms;
+          });
+        }}
+        >
+          Make Admin
+        </button>
+       
         
-    </div>
+  </div>
   );
 }
 
