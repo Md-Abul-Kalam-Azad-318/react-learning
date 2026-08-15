@@ -9,6 +9,11 @@ function Users() {
     <div>
         <h2>Users Page</h2>
 
+        <p>Query string: {searchParams.toString()}</p>
+
+        <p>Has role: {searchParams.has("role") ? "Yes": "No"}</p>
+        <p>Has age: {searchParams.has("age") ? "Yes": "No"}</p>
+
         {/* <p>Name: {searchParams.get("name")}</p>
         <p>Role: {searchParams.get("role") || 
           "Not specified"}</p> */}
@@ -29,9 +34,9 @@ function Users() {
         </button>
 
         <button onClick={() =>{
-          setSearchParams((pararms) =>{
-            pararms.set("role", "Admin");
-            return pararms;
+          setSearchParams((params) =>{
+            params.set("role", "Admin");
+            return params;
           });
         }}
         >
