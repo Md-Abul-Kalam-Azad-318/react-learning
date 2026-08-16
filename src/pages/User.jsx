@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 function User() {
 
@@ -13,9 +14,12 @@ function User() {
   ]
     //const params = useParams();
     const {id} = useParams();
+    const [searchParams] = useSearchParams();
     const user = users.find(
       (user) =>user.id === Number(id)
     );
+
+    const tab = searchParams.get("tab");
   return (
     <div>
         <h2>User Page</h2>
@@ -26,6 +30,9 @@ function User() {
         {
           user? (<p>Welcome, {user.name}</p>): (<p>User not found.</p>)
         }
+
+        <p>User ID: {id}</p>
+        <p>Selected Tab: {tab}</p>
     </div>
   );
 }
