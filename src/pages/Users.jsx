@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Users() {
 
@@ -42,8 +43,20 @@ function Users() {
         >
           Make Admin
         </button>
-       
-        
+  
+         <h3>Users</h3>
+
+        <ul>
+          <li>
+            <Link to="/dashboard/user/1?tab=profile">Alice</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/dashboard/user/2?tab=settings">Bob</Link>
+          </li>
+        </ul>
+         
   </div>
   );
 }
