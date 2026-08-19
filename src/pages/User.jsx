@@ -1,18 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
+import { users } from '../data/users';
 
 
 function User() {
 
-  const users = [
-    {id: 1, name: "Alice"},
-    {id: 2, name: "Bob"},
-    {id: 3, name: "Charlie"},
-    {id: 4, name: "Azad"},
-    {id: 5, name: "Sakib"},
-    {id: 6, name: "Hasan"}
-  ]
     //const params = useParams();
     const {id} = useParams();
     const [searchParams] = useSearchParams();

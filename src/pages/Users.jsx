@@ -1,17 +1,14 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { users } from '../data/users';
 
 function Users() {
-
   const [searchParams, setSearchParams] = useSearchParams();
-
   return (
     <div>
         <h2>Users Page</h2>
-
         <p>Query string: {searchParams.toString()}</p>
-
         <p>Has role: {searchParams.has("role") ? "Yes": "No"}</p>
         <p>Has age: {searchParams.has("age") ? "Yes": "No"}</p>
 
@@ -45,20 +42,16 @@ function Users() {
         </button>
   
          <h3>Users</h3>
-
-        <ul>
-          <li>
-            <Link to="/dashboard/user/1?tab=profile">Alice</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/dashboard/user/2?tab=settings">Bob</Link>
-          </li>
-        </ul>
-         
+          {users.map((user) =>(
+            <li key={user.id}>
+              <Link to = {`/dashboard/user/${user.id}?tab=${user.tab}`}>
+              {user.name}
+              </Link>
+              
+            </li>
+          ))}
   </div>
   );
-}
+} 
 
 export default Users;
