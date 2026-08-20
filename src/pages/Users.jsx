@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { users } from '../data/users';
 
 function Users() {
@@ -42,16 +42,30 @@ function Users() {
         </button>
   
          <h3>Users</h3>
-          {users.map((user) =>(
+         
+          {/* {users.map((user) =>(
             <li key={user.id}>
-              <Link to = {`/dashboard/user/${user.id}?tab=${user.tab}`}>
+              <NavLink to = {`/dashboard/user/${user.id}?tab=${user.tab}`}>
               {user.name}
-              </Link>
-              
+              </NavLink> 
             </li>
+          ))} */}
+
+          {users.map((user) =>(
+            <li key = {user.id}>
+              <NavLink to = {`/dashboard/user/${user.id}?tab=${user.tab}`}
+              style = {({isActive}) =>({
+                  color:isActive? "red" : "blue",
+                  fontWeight: isActive? 
+                  "bold":"normal"
+              })}
+              >
+              {user.name}
+              </NavLink>
+            </li> 
+            
           ))}
   </div>
   );
-} 
-
+}
 export default Users;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
-import { users } from '../data/users';
+import { NavLink } from 'react-router-dom';
+import {users}  from '../data/users';
 
 
 function User() {
@@ -16,6 +17,22 @@ function User() {
     const tab = searchParams.get("tab");
   return (
     <div>
+        <nav>
+          {users.map((user) =>(
+            <NavLink 
+            key={user.id}
+            to={`/dashboard/user/${user.id}?tab=${user.tab}`}
+            style={({isActive}) =>({
+              color: isActive? "red" : "blue",
+              fontWeight: isActive? "bold" : "normal",
+              marginRight: "15px"
+            })}
+            >
+              {user.name}
+            </NavLink>
+          ))}
+        </nav>
+
         <h2>User Page</h2>
         {/* <h2>User ID: {params.id}</h2> */}
         {/* <h2>User ID: {id}</h2>
