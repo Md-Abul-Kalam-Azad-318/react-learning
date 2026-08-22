@@ -1,0 +1,8 @@
+.dashboard-nav a {
+    margin: 10px;
+    text-decoration: underline;
+}
+.dashboard-nav a.active {
+    color: red;
+    font-weight: bold;
+}

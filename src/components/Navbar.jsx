@@ -8,30 +8,24 @@ function Navbar() {
       <NavLink
        to = "/"
        className={({isActive}) =>
-          isActive? "active" : ""
-      }
+          isActive? "active" : ""}
       >
         Home
       </NavLink> {" | "}
-
       <NavLink
        to = "/about"
        className={({isActive}) =>
-        isActive ? "active": ""
-      }
+        isActive ? "active": ""}
        >
         About
-        </NavLink> {" | "}
-
+      </NavLink> {" | "}
       <NavLink
        to = "/services"
        className={({isActive}) =>
-        isActive ? "active": ""
-      }
+        isActive ? "active": ""}
       >
         Services
-        </NavLink> {" | "}
-
+      </NavLink> {" | "}
       <NavLink
        to = "/contact"
        className={({isActive}) =>
@@ -39,21 +33,16 @@ function Navbar() {
       }
        >
         Contact
-       </NavLink>
+      </NavLink>
         {" | "}
-       <NavLink
+      <NavLink
         to= "/login"
         className={({isActive}) =>
-          isActive ? "active": ""
-        }
+          isActive ? "active": ""}
        >
         Login
-       </NavLink> {" | "}
-
-       
-
+      </NavLink> {" | "}
     </nav>
   );
 }
-
 export default Navbar;
