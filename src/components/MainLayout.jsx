@@ -9,7 +9,10 @@ function MainLayout() {
 
         <hr />
 
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
+        
     </div>
   );
 }
