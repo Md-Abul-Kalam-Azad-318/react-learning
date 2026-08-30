@@ -29,13 +29,8 @@ const App = () => {
           <Route path = "/services" element = {<Services />} />
           <Route path = "/contact" element = {<Contact/>} />
           <Route path="/login" element = {<Login />}/>
-        </Route> 
 
-        <Route path = "/user/:id" element = {<User />}/>
-
-        <Route path="*" element = {<NotFound />} />
-
-        <Route path = "/dashboard" element = {<Dashboard />}>
+          <Route path = "/dashboard" element = {<Dashboard />}>
             <Route index element = {<Profile />}/>
             <Route path = "profile" element = {<Profile />} />
             <Route path = "settings" element = {<Settings />}/>
@@ -43,6 +38,13 @@ const App = () => {
             <Route path = "user/:id" element = {<User />}/>
             <Route path = "users" element = {<Users />}/>
         </Route>
+        </Route> 
+
+        <Route path = "/user/:id" element = {<User />}/>
+
+        <Route path="*" element = {<NotFound />} />
+
+        
     </Routes>  
     </div>
   );
